@@ -1,0 +1,6 @@
+<launch>
+	
+	<node pkg="mobis" type="planner_2.py" name="controller" output="screen"/>
+	<node pkg="rviz" type="rviz" name="rviz" args="-d $(find mobis)/rviz/planner_2.rviz" />
+</launch>
+

@@ -1,0 +1,9 @@
+<launch>
+	
+	<!-- detection node -->
+	<node pkg="lane_detection_example" type="lane_fitting.py" name="lane_fitting"/>
+	
+	<!--  control node-->
+	<node pkg="lane_detection_example" type="lane_follower.py" name="lane_follower"  />
+
+</launch>
